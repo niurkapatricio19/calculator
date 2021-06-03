@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <head>
+      <title>Calculator</title>
+        <link href="/normalize.css" rel="stylesheet">
+            <style>
+                 header{
+                       text-align:center;
+                       background: url("https://i.pinimg.com/originals/b1/44/69/b144690e8f5614459ac749fe812f9ac1.jpg");
+                       background:cover;
+                       color:white;
+                        }
+                a{
+                  color:white;
+                 }
+
+                h1{
+                   font-size:70px;
+                   color:black;
+
+                  }
+                  h2{
+                    font-size:40px;
+                    color:blue;
+                  }
+                  body{
+                    background-color:turquoise; 
+                  }
+
+               img{
+                   margin:40px 0px 0px 0px;
+                   border:7px solid skyblue;
+                   border-color:blue; 
+                   border-radius:20px;
+                   width:200px;
+                   height:200px;
+                   }
+
+                ul{
+                   padding:10px;
+                   background:orange;
+                  }
+
+
+                  }
+
+                li{
+                  display:inline;
+                  padding:0px 10px 0px 10px;
+                  }
+
+                  #middlebox{
+                    text-align:center;
+                    width:500px;
+                    background:beige; 
+                    margin:0 auto;
+                    border:5px;
+                    border-color:#f00;  
+                  }
+                  article{
+                    max-width:500px;
+                    padding:20px;
+                    margin:0 auto;
+                  }
+                  @media (max-width:500px){
+                    body{
+                      background:skyblue;
+                    }
+                    li{
+                      display:block;
+                      padding:5px;
+                    }
+                    h2{
+                      font-size:36px;
+                    }
+                  }
+           </style>
+    
+  </head>
+  <body>
+      <header>
+          <img src="https://previews.123rf.com/images/djvstock/djvstock1803/djvstock180303698/96984288-cute-calculator-icon-over-white-background-colorful-design-vector-illustration.jpg">
+
+              <h1>Calculator</h1>
+
+          <ul>
+              <li><a href="https://niurkapatricio19.github.io/planet-earth1/index.html.html">Earth Website</a></li>
+              <li><a href="https://niurkapatricio19.github.io/earthform2/">Form Website</a></li>
+              
+         </ul>
+
+     </header>
+         <div id="middlebox">
+            <h2>This is a calculator</h2>
+
+         <form name="calculator">
+              <ol>
+            
+                   <article>
+
+                      <p>Number 1: <input type="text" name="txtnum1" placeholder="enter number 1"></p>
+                      <br>
+                      <p center>+</p>
+                      <br>
+                      <p>Number 2: <input type="text" name="txtnum2" placeholder="enter number 2"></p>
+                      <br>
+                      <p>Result: <input type="text" name="txtres" placeholder="result"></p>
+                      <br>
+                      <p><input type="button" value="calculate" onclick="sumValues()"></p>
+
+                    </article>
+
+                     
+              </ol>
+            
+         </form>
+       </div>
+
+         <script type="text/javascript">
+           function sumValues(){
+                               var num1, num2, res;
+                               num1=Number(document.calculator.txtnum1.value);
+                               num2=Number(document.calculator.txtnum2.value);
+                               res=num1+num2;
+                               document.calculator.txtres.value=res;
+                               }
+
+            function subValues(){
+                               var num1, num2, res;
+                               num1=Number(document.calculator.txtnum3.value);
+                               num2=Number(document.calculator.txtnum4.value);
+                               res=num1+num2;
+                               document.calculator.txtres.value=rest;
+                               }                   
+         </script>
+
+
+
+</body>
+
+
